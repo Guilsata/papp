@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary: #0c2461;
+  --secondary: #1e3799;
+  --accent: #f6b93b;
+  --lightgray: #ddd;
+  --text-regular: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-regular);
+}
