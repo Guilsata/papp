@@ -6,10 +6,11 @@
 
 :root {
   --font-family: "Roboto", sans-serif;
-  --primary: #0c2461;
-  --secondary: #1e3799;
+  --primary: #5c518a;
+  --secondary: #6c43b8;
   --accent: #f6b93b;
   --lightgray: #ddd;
+  --lightgray2: #eee;
   --text-regular: #333;
 }
 
@@ -31,7 +32,7 @@ body {
   color: var(--text-regular);
 }
 
-// util
+// layout
 
 .d-flex {
   display: flex;
@@ -63,4 +64,84 @@ body {
 
 .flex-fill {
   flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+//util
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+//theme
+
+.list-primary {
+  li {
+    padding: 10px 15px;
+    border: 1px solid var(--lightgray);
+    border-top: 0px;
+    &:hover {
+      background-color: var(--primary);
+      color: var(--lightgray2);
+    }
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  li:first-child {
+    border-top: 1px solid var(--lightgray);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  li:last-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: var(--lightgray2);
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  &-primary {
+    background-color: var(--primary);
+    color: var(--lightgray2);
+    &:hover {
+      background-color: var(--secondary);
+    }
+    transition: var(--lightgray2) 0.4s;
+  }
+}
+
+//debug
+
+.d1 {
+  border: 1px solid red;
+}
+
+.d2 {
+  border: 1px solid green;
 }
