@@ -66,6 +66,10 @@ body {
   flex: 1 1 auto;
 }
 
+.flex-50 {
+  flex: 1 1 50%;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -80,6 +84,14 @@ body {
 
 .p-20 {
   padding: 20px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
 }
 
 .m-10 {
