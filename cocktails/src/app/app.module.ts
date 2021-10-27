@@ -1,22 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import { CocktailDetailsComponent } from './cocktail-details/cocktail-details.component';
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./header/header.component";
+
+import { ContainerCocktailComponent } from "./container-cocktail/container-cocktail.component";
+import { CocktailDetailsComponent } from "./container-cocktail/cocktail-details/cocktail-details.component";
+import { CocktailListComponent } from "./container-cocktail/cocktail-list/cocktail-list.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CocktailListComponent,
-    CocktailDetailsComponent
+    CocktailDetailsComponent,
+    ContainerCocktailComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
