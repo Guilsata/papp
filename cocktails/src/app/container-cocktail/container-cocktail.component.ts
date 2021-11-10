@@ -28,9 +28,14 @@ export class ContainerCocktailComponent implements OnInit {
     },
   ];
   public selectedCocktail!: Cocktail;
+
   constructor() {}
 
   ngOnInit(): void {
     this.selectedCocktail = this.cocktails[0];
+  }
+
+  public selectCocktail(index: number): void {
+    this.selectedCocktail = this.cocktails[index];
   }
 }
